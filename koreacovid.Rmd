@@ -73,12 +73,17 @@ table1 <- xtabs(~result + Sex, data=kRdata)
 rowPerc(table1)
 colPerc(table1)
 ```
-
+Comparing the percentage among men and women who died; nearly twice as many men died in correlation to the women. For men, 64% of them died to COVID-19, while 36% of women died to COVID-19.
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+In both our Chi-squared test and fisher test, we get a P-Value of less than 0.05. This means we reject the Null hypothesis. The odds ratio in the fisher test indicates that males are 2.3 times more likely to die from COVID-19 compared to females in Korea.
 
 ## Conclusions
 
