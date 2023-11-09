@@ -33,7 +33,7 @@ str(kRdata)
   
 # Your Question - Is dying independent of sex?
 
-$H_0$ There is no relationship between an individuals sex and their death from COVID-19. 
+$H_0$ There is no relationship between an individuals sex and their death from COVID-19.
 
 
 $H_A$ There is a relationship between the sex of an individual and their death from COVID-19.
@@ -83,7 +83,9 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-In both our Chi-squared test and fisher test, we get a P-Value of less than 0.05. This means we reject the Null hypothesis. The odds ratio in the fisher test indicates that males are 2.3 times more likely to die from COVID-19 compared to females in Korea.
+In both our Chi-squared test and fisher test, we get a P-Value of less than 0.05. This means we reject the Null hypothesis. The odds ratio in the fisher test indicates that males are 2.3 times more likely to die from COVID-19 compared to females.
 
 ## Conclusions
+
+We were asked if a person's death to COVID-19 is dependent on their sex. Our graphical and numerical data showed us that the percentage of male deaths were higher than female deaths. Our fisher test also confirms this, stating that men are 2.3 times more likely to die from COVID-19 compared to women. In both our fisher and chi-squared test, the P-value came back less than 0.05 meaning we rejected our NULL hypothesis. In conclusion, males are more likely to die from COVID-19 compared to females. 
 
